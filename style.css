@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* left column + middle (for the writing) + right column */
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 20%;
+    margin-bottom: 20%; 
+}
