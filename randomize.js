@@ -8,25 +8,26 @@ it is easier to do it as a js file than embedding in html
 function randomizeAsideImages(asideSelector) {
   const aside = document.querySelector(asideSelector);
   const imgs = aside.querySelectorAll("img");
-  const placed = []; // store positions of already placed images
+  const placed = []; //stores positions of already placed images
 
   imgs.forEach(img => {
     let top, left, overlap;
-    const imgWidth = 120;  // approximate since width:150px
-    const imgHeight = 120; // approximate since height:auto
+    const imgWidth = 150;  
+    const imgHeight = 150; 
 
     do {
-      // Generate candidate position
+      
+      //generate image positions
       top = Math.random() * 80;   // % (leave margin at bottom)
       left = Math.random() * 60;  // % inside column
       overlap = false;
 
-      // Convert percentages to pixels based on aside size
+      //convert percentages to pixels based on aside size
       const asideRect = aside.getBoundingClientRect();
       const newX = (left / 100) * asideRect.width;
       const newY = (top / 100) * asideRect.height;
 
-      // Check overlap with previously placed images
+      //checks overlap with previously placed images
       for (const pos of placed) {
         if (
           newX < pos.x + imgWidth &&
@@ -39,17 +40,17 @@ function randomizeAsideImages(asideSelector) {
         }
       }
 
-      // If no overlap, save this position
+      //if there is no overlap--> save the position
       if (!overlap) {
         placed.push({ x: newX, y: newY });
         img.style.top = top + "%";
         img.style.left = left + "%";
       }
-    } while (overlap); // retry until non-overlapping
+    } while (overlap); //retries until non-overlapping
   });
 }
 
-// Run after page loads
+//runs after the page loads
 window.addEventListener("load", () => {
   randomizeAsideImages(".left-column");
   randomizeAsideImages(".right-column");

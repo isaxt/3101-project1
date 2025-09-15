@@ -21,13 +21,13 @@ main {
 }
 
 aside {
-  position: relative;   /* child images are positioned inside */
+  position: relative;   /* images are positioned inside */
   min-height: 100vh;    /* full column height */
 }
 
 aside img {
   position: absolute;
-  width: 120px;
+  width: 150px;
   height: auto;
 }
 
