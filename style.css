@@ -1,10 +1,15 @@
 body {
     margin: 0;
-    background-color: black;
     color: white;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; /* left column + middle (for the writing) + right column */
     min-height: 100vh;
+
+    /* background image */
+    background-image: url("assets/background_index.jpg"); 
+    background-size: cover;      /* fills the screen */
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 main {
@@ -14,3 +19,30 @@ main {
     margin-top: 20%;
     margin-bottom: 20%; 
 }
+
+aside {
+  position: relative;   /* child images are positioned inside */
+  min-height: 100vh;    /* full column height */
+}
+
+aside img {
+  position: absolute;
+  width: 120px;
+  height: auto;
+}
+
+
+
+/*
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+}
+
+aside img {
+  width: 150px;
+  height: auto;
+}
+*/
