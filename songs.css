@@ -13,11 +13,22 @@ body {
   min-width: 1640px;               
   overflow: auto;   
 
-  padding: 0 40px; /* adds 40px padding left + right */
+  padding: 0 40px; /*adds 40px padding left + right */
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 20%;
+    margin-bottom: 20%; 
 }
 
 nav a {
-  color: rgb(255, 255, 255);
+  color: rgb(166, 61, 177);
   text-decoration: none;
   margin-right: 15px;
 }
