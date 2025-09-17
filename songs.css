@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(166, 61, 177);
+
+  background-color: rgb(255, 255, 255);
+  background-image: url("assets/ipod_background.png");
+  background-size: contain;        
+  background-repeat: no-repeat;
+  background-position: center 200px; /* pushes image down 200px */
+  
+  min-height: 2360px;              
+  min-width: 1640px;               
+  overflow: auto;   
+
+  padding: 0 40px; /* adds 40px padding left + right */
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 15px;
+}
