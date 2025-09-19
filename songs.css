@@ -2,33 +2,65 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: rgb(166, 61, 177);
-
-  background-color: rgb(255, 255, 255);
-  background-image: url("assets/ipod_background.png");
-  background-size: contain;        
-  background-repeat: no-repeat;
-  background-position: center 200px; /* pushes image down 200px */
-  
-  min-height: 2360px;              
-  min-width: 1640px;               
-  overflow: auto;   
-
-  padding: 0 40px; /*adds 40px padding left + right */
-
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr
+  grid-template-columns: 1fr 1fr; /* half screen each */
+  height: 100vh; /* full viewport height */
 }
 
+/* Left side with background image */
+.image-side {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.image-side img {
+  position: absolute;
+  max-width: 100%; /* adjust sizing */
+  height: auto;
+  top: 30px; /* pushes it down */
+}
+
+/* Right side content */
 main {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    margin-top: 20%;
-    margin-bottom: 20%; 
+  background-color: white;
+  padding: 40px;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* top, middle spacer, bottom */
+  height: 100vh; /* full height of the viewport */
+}
+
+main h1,
+main p {
+  margin: 0; /* remove extra spacing */
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  align-self: end; /* makes sure nav sits at the bottom */
 }
 
 nav a {
   color: rgb(166, 61, 177);
   text-decoration: none;
-  margin-right: 15px;
+  margin: 5px 0;
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 15px; /* spacing between songs */
+  align-self: start; /* hug the top of its container */
+  margin-top: 10px; /* optional small spacing from heading */
+}
+
+.song {
+  background-color: #f5f5f5;
+  border: 1px solid rgb(166, 61, 177);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
 }

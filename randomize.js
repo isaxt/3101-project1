@@ -1,7 +1,5 @@
 /* randomize the images on the index.html page
 
-vh--> positioning
-
 it is easier to do it as a js file than embedding in html
 */
 

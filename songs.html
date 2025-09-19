@@ -6,12 +6,43 @@
   <link rel="stylesheet" href="songs.css"> 
 </head>
 <body>
+  <div class="image-side">
+    <img src="assets/ipod_background.png" alt="iPod">
+</div> <!-- left side with background image -->
+
+  <main>
   <h1>some song recs!</h1>
-  <p>scene artists i listen to lowkey religiously</p>
+  <p>artists i listen to religiously-- hope you enjoy!</p>
+
+  <section class="songs-grid">
+    <div class="song" data-audio="songs/faster_harder.mp3">Faster N Harder – 6arelyhuman</div>
+    <div class="song" data-audio="songs/pretty_scene.mp3">Pretty Scene Girl! – Clover!</div>
+    <div class="song" data-audio="songs/galore.mp3">TOO MANY LINES! – asteria & kets4eki</div>
+    <div class="song" data-audio="songs/kiss_me.mp3">Kiss Me Again – ROY BEE</div>
+   
+    <div class="song" data-audio="songs/luv_me.mp3">LUV ME – Vyzer & 6arelyhuman</div>
+    <div class="song" data-audio="songs/galore.mp3">GALORE – Clonnex & asteria </div>
+    <div class="song" data-audio="songs/pika_girl_s3rl.mp3">Pika Girl – S3RL</div>
+    <div class="song" data-audio="songs/knees.mp3">ON HER KNEES! – Vyzer</div>
+    
+    <div class="song" data-audio="songs/PIKA_GIRL.mp3">PIKA GIRL – asteria & kets4eki</div>
+   
+    <div class="song" data-audio="songs/move_body.mp3">MOVE YOUR BODY – asteria</div>
+    <div class="song" data-audio="songs/party_80s.mp3">Party Like The 80's – 6arelyhuman, asteria & kets4eki</div>
+    <div class="song" data-audio="songs/millionare.mp3">Millionaire – 6arelyhuman, asteria & kets4eki</div>
+  </section>
+
+  <!-- audio player -->
+  <audio id="audio-player" controls style="display:none;"></audio>
 
   <nav>
-    <a href="index.html">history</a>  
-    <a href="personal.html">personal images</a>
+    <a href="index.html">back to the history</a>  
+    <a href="personal.html">concert images!</a>
   </nav>
+</main>
+
+<!--js file-->
+    <script src="music.js"></script>
+
 </body>
 </html>

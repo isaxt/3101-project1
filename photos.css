@@ -3,10 +3,26 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
+
 html,
 body {
-	background: linear-gradient(45deg, #190f2c, #200b30);
-	padding: 15px;
+  background: linear-gradient(45deg, #190f2c, #200b30);
+  padding: 15px;
+  color: white; /* makes all text white by default */
+}
+
+h1, p, nav a {
+  color: white; /* ensures headings, paragraphs, and links are white */
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 15px; /* optional spacing between links */
 }
 img {
 	max-width: 100%;
@@ -44,3 +60,4 @@ img {
 	grid-column: span 2;
 	grid-row: span 4;
 }
+
