@@ -4,10 +4,10 @@ body {
   color: rgb(166, 61, 177);
   display: grid;
   grid-template-columns: 1fr 1fr; /* half screen each */
-  height: 100vh; /* full viewport height */
+  height: 100vh;
 }
 
-/* Left side with background image */
+/* left side with background image */
 .image-side {
   position: relative;
   display: grid;
@@ -21,14 +21,14 @@ body {
   top: 30px; /* pushes it down */
 }
 
-/* Right side content */
+/*right side content */
 main {
   background-color: white;
   padding: 40px;
 
   display: grid;
   grid-template-rows: auto 1fr auto; /* top, middle spacer, bottom */
-  height: 100vh; /* full height of the viewport */
+  height: 100vh;
 }
 
 main h1,
@@ -53,8 +53,8 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr; /* two columns */
   gap: 15px; /* spacing between songs */
-  align-self: start; /* hug the top of its container */
-  margin-top: 10px; /* optional small spacing from heading */
+  align-self: start; /* top of its container */
+  margin-top: 10px; /*small spacing from heading */
 }
 
 .song {
